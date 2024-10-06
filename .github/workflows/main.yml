@@ -7,16 +7,11 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: 	macos-latest
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
-
-      - name: Use Node.js 16  # Принудительно указываем версию Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '16'
+        uses: actions/checkout@v4.2.0
 
       - name: Deploy
         uses: SamKirkland/FTP-Deploy-Action@4.3.0 # GitHub Action, используемая для автоматического деплоя файлов на сервер через FTP
