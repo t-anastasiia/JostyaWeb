@@ -1,3 +1,5 @@
+/* Стили для Personal Pages */
+
 /* Main container */
 .container {
     width: 100%;
@@ -71,4 +73,90 @@
     background-color: rgba(255, 255, 0, 0.5); /* Semi-transparent background */
     padding: 10px;
     border-radius: 5px;
+}
+
+/* Основные стили для mainPage */
+
+/* Контейнер для всей страницы */
+.main-page-container {
+    display: flex;
+    position: relative;
+    height: 100vh; /* Полная высота экрана */
+    justify-content: center; /* Центрируем контент по горизонтали */
+    align-items: center; /* Центрируем контент по вертикали */
+}
+
+/* Общие стили для всех колонок */
+.column {
+    flex: 1; /* Колонки равны по ширине */
+    display: flex;  
+    flex-direction: column;
+    align-items: center; /* Выравнивание по центру горизонтально */
+    justify-content: center; /* Выравнивание по центру вертикально */
+    padding: 20px; /* Внутренние отступы вокруг содержимого */
+}
+
+/* Стили для левой колонки */
+.left-column {
+    flex: 1;
+    background-color: white; /* Белый фон для левой части */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Стили для центральной колонки */
+.center-column {
+    position: absolute;
+    top: 10%; /* Сдвиг на 40% от верха страницы, чуть выше середины */
+    padding: 20px;
+    border: 4px solid transparent; /* Прозрачная обводка для создания пространства */
+    background-image: linear-gradient(to right, #c89b9b 50%, white 50%);
+    background-origin: border-box; /* Градиент будет в области обводки */
+    background-clip: border-box; /* Применение градиента к границам */
+}
+
+/* Стили для правой колонки */
+.right-column {
+    flex: 1;
+    background-color: #c89b9b; /* Розовый фон для правой части */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Стили для изображений */
+img {
+    width: 300px; /* Ширина изображения */
+    height: 300px; /* Высота изображения для создания квадратной формы */
+    object-fit: cover; /* Сохранение пропорций и обрезка лишнего */
+    border-radius: 8px; /* Скругленные углы */
+}
+
+/* Стили для заголовков */
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px; /* Внешний отступ снизу заголовка */
+    font-family: 'Courier New', Courier, monospace; /* Шрифт заголовков */
+    color: #333; /* Цвет текста */
+}
+
+/* Стили для нижнего слоя */
+.base-layer {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* Стили для верхнего слоя */
+.top-layer {
+    z-index: 2; /* Z-index для верхнего слоя, он выше */
+}
+
+/* Текст внутри footer */
+.footer p {
+    margin: 0;
+    padding: 0;
 }
