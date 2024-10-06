@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Deploy
         uses: SamKirkland/FTP-Deploy-Action@4.3.0 # GitHub Action, используемая для автоматического деплоя файлов на сервер через FTP
@@ -22,4 +22,3 @@ jobs:
           local-dir: ./build/  # Локальная папка, которую нужно отправить
           server-dir: /public_html/  # Директория на сервере
           protocol: ftps
-          passive: true
