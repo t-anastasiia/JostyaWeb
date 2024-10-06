@@ -22,3 +22,4 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./build/  # Локальная папка, которую нужно отправить
           server-dir: /public_html/  # Директория на сервере
+          protocol: ftps  # Используем FTPS для зашифрованного соединения
