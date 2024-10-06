@@ -20,4 +20,5 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./build/  # Локальная папка, которую нужно отправить
-          server-dir: l909843o.beget.tech/public_html/  # Директория на сервере
+          server-dir: /public_html/  # Директория на сервере
+          protocol: ftps
