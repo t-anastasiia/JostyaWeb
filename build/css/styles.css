@@ -1,0 +1,74 @@
+/* Main container */
+.container {
+    width: 100%;
+    margin: 0 auto;
+    position: relative; /* Allow positioning of child elements */
+}
+
+/* Rectangle 1: Header */
+.header {
+    background-color: #243642;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    line-height: 100px;
+    font-size: 24px;
+    color: white;
+    position: relative; /* Can be used to position child elements absolutely */
+}
+
+/* Rectangle 2: Main Content */
+.main-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #387478;
+    height: 490px;
+    width: 97.29%;
+    margin: 0;
+    padding: 20px;
+    position: relative; /* Allow absolutely positioned children */
+}
+
+/* Main content text */
+.main-content {
+    width: 65%;
+    font-size: 22px;
+    color: white;
+    position: relative; /* Allows for fine-tuning of position */
+}
+
+/* Image next to the main content */
+.main-content-image {
+    width: 22%;
+    position: relative; /* Can allow positioning adjustments */
+}
+
+.main-content-image img {
+    max-width: 300%;
+    height: 400px;
+    border-radius: 8px; /* Optional: Adds rounded corners */
+}
+
+/* Rectangle 4: Footer */
+.footer {
+    background-color: #E2F1E7;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    clear: both;
+    position: relative; /* Allows positioning adjustments */
+}
+
+/* Example of absolute positioning for decorative purposes */
+.decorative-element {
+    position: absolute; /* Positioned relative to the nearest positioned ancestor */
+    top: 20px; /* 20px from the top of the .main-content-wrapper */
+    right: 20px; /* 20px from the right of the .main-content-wrapper */
+    background-color: rgba(255, 255, 0, 0.5); /* Semi-transparent background */
+    padding: 10px;
+    border-radius: 5px;
+}
