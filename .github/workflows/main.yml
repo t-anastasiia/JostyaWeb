@@ -7,14 +7,15 @@ on:
 
 jobs:
   deploy:
-    runs-on: 	macos-latest
-
+    runs-on: ubuntu-latest
+    
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v4.2.0
+        uses: actions/checkout@v4
 
-      - name: Deploy
-        uses: SamKirkland/FTP-Deploy-Action@4.3.5 # GitHub Action, используемая для автоматического деплоя файлов на сервер через FTP
+      - name: FTP Deploy
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+             # GitHub Action, используемая для автоматического деплоя файлов на сервер через FTP
         with:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USERNAME }}
