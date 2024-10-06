@@ -19,5 +19,5 @@ jobs:
         ftp-server: ${{ secrets.FTP_HOST }}
         ftp-username: ${{ secrets.FTP_USERNAME }}
         ftp-password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./  # Локальная папка, которую нужно отправить
+        local-dir: ./build/.  # Локальная папка, которую нужно отправить
         server-dir: /public_html/  # Директория на сервере
