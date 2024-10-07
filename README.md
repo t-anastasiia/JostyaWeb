@@ -1,6 +1,5 @@
-# JostyaWeb
-web site about Joubran and Nastya
-<div>
+<h1 align="center">JostyaWeb</h1>
+<div align="center">
   <a href="http://l909843o.beget.tech/public_html" target="_blank">Website link available until 07.10.2025
   </a>
 </div>
