@@ -7,9 +7,32 @@
     position: relative; /* Allow positioning of child elements */
 }
 
+/* Nastya's page colours*/
+
+.background_color_N1{
+    background-color: #55927b;
+}
+.background_color_N2{
+    background-color: #93ceb9;
+}
+.background_color_N3{
+    background-color: #c0ddc0;
+}
+
+/* Joubran's page colours*/
+
+.background_color_J1{
+    background-color: #243642;
+}
+.background_color_J2{
+    background-color: #387478;;
+}
+.background_color_J3{
+    background-color: #E2F1E7;
+}
+
 /* Rectangle 1: Header */
 .header {
-    background-color: #243642;
     height: 100px;
     width: 100%;
     text-align: center;
@@ -24,7 +47,6 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    background-color: #387478;
     height: 490px;
     width: 97.29%;
     margin: 0;
@@ -42,7 +64,7 @@
 
 /* Image next to the main content */
 .main-content-image {
-    width: 22%;
+    width: 28%;
     position: relative; /* Can allow positioning adjustments */
 }
 
@@ -54,7 +76,6 @@
 
 /* Rectangle 4: Footer */
 .footer {
-    background-color: #E2F1E7;
     height: 50px;
     width: 100%;
     text-align: center;
