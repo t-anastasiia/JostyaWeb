@@ -76,12 +76,17 @@ p {
 }
 
 /* Image to the right of the main content */
+.main-content-image {
+    width: 80px; /* Фиксированная ширина контейнера */
+    height: 80px; /* Фиксированная высота контейнера, чтобы получился квадрат */
+    overflow: hidden; /* Обрезает содержимое, выходящее за пределы контейнера */
+    border-radius: 8px; /* Скругление углов контейнера */
+}
+
 .main-content-image img {
-    max-width: 80px; /* Максимальная ширина изображения */
-    width: 100%; /* Ширина адаптируется к контейнеру */
-    height: auto;
-    object-fit: cover;
-    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Обеспечивает заполнение контейнера без искажений */
 }
 
 /* Rectangle 4: Footer */
