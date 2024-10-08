@@ -120,7 +120,7 @@ p {
 .main-page-container {
     display: flex;
     position: relative;
-    height: 100vh; /* Полная высота экрана */
+    height: 87vh; /* Полная высота экрана */
     justify-content: center; /* Центрируем контент по горизонтали */
     align-items: center; /* Центрируем контент по вертикали */
 }
