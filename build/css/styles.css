@@ -195,6 +195,26 @@ h2 {
     z-index: 2; /* Z-index для верхнего слоя, он выше */
 }
 
+/* back to main page button*/
+.back-to-main {
+    text-align: center;
+    margin: 100px 0;
+}
+
+.back-to-main button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #d1e2b4;
+    color: rgb(105, 105, 105);
+    border: none;
+    border-radius: 5px;
+}
+
+.back-to-main button:hover {
+    background-color: #708453;
+}
+
 /* Текст внутри footer */
 .footer p {
     margin: 0;
