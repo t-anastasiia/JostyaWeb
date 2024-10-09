@@ -217,6 +217,12 @@ h2 {
 
 /* Текст внутри footer */
 .footer p {
-    margin: 0;
-    padding: 0;
+    text-align: center;
+    font-size: 12px;
+    padding: 0px;
+}
+
+.footer-logo {
+    width: 80px; /* Default size for larger screens */
+    max-width: 100%; /* Ensures the image never exceeds the container width */
 }
