@@ -43,7 +43,6 @@
 
 html, body {
   height: 100%;
-  overflow: hidden;
 }
 
 /*================ PERSONAL PAGES ================*/
@@ -67,9 +66,9 @@ html, body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex-grow: 1;
+  flex-grow: 1; 
   padding: var(--padding-medium);
-  overflow: hidden;
+  overflow: hidden; 
 }
 
 .back-to-main button {
@@ -110,10 +109,13 @@ p {
   margin-bottom: var(--padding-small);
 }
 
-.description {
-  height: 30%;
+.description, .survey-container {
+  flex-grow: 1;
   overflow: auto;
   padding: var(--padding-medium);
+}
+
+.description {
   border: 1px solid #ddd;
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow-default);
@@ -132,17 +134,9 @@ p {
   object-fit: cover;
 }
 
-.survey-container {
-  height: 40%; 
-  overflow: auto;
-  padding: var(--padding-medium);
-  border: 1px solid #ddd;
-  border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow-default);
-}
-
 .result-container {
-  height: 10%;
+  flex-grow: 0; 
+  height: auto;
   overflow: auto;
   padding: var(--padding-small);
   border: 1px solid #ddd;
