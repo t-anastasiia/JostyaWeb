@@ -1,64 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <noscript>
-        <p>Your browser does not support JavaScript, or it is disabled. Some features on this page may not work as intended.</p>
+      <p>
+        Your browser does not support JavaScript, or it is disabled. Some
+        features on this page may not work as intended.
+      </p>
     </noscript>
-    
-    <link rel="icon" href="img/user.png" type="image/x-icon">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="./src/assets/user.png" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nastya's page</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="./src/css/styles.css" />
+  </head>
+  <body class="n-page">
     <div class="container">
-
-        <!-- Header --> 
-        <div class="header-wrapper background_color_N1">
-            <div class="header">
-                Nastya
-            </div>
-
-            <!-- Image to the Right of Main Content -->
-            <div class="main-content-image">
-                <img src="img/image_n.jpg" alt="Nastya">
-            </div>
+      <!-- Header -->
+      <header class="header-wrapper background_color_N1">
+        <h1 class="header">Nastya</h1>
+        <div class="main-content-image">
+          <img src="src/assets/nastya.jpg" alt="Nastya" />
         </div>
-  
-        <!-- Main Content -->
-        <div class="main-content background_color_N2">
-            <p>
-                Мне 20 лет, и вот уже полгода я работаю iOS-разработчиком. За это время я освоила Swift, UIKit, и начала разбираться с SwiftUI. Каждый день в работе приносит новые задачи: от написания кода до обсуждения архитектуры приложений. Я часто работаю с Xcode — средой, которая стала уже как родная. Иногда приходится решать сложные алгоритмические задачи, что для меня особенно интересно, даже если порой решение не сразу приходит.
-            </p>
-            <p>
-                Вне работы я обожаю котиков, комедии и походы в горы. Котики всегда поднимают настроение, комедии помогают отвлечься, а горы — это место, где я могу перезагрузиться и найти вдохновение.
-            </p>
-                    <!-- Back to Main Page Button -->
-            <div class="back-to-main">
-                <button onclick="window.location.href='index.html';">Back to Main Page</button>
-            </div>
-        </div>
+      </header>
 
-        <!-- Footer -->
-        <div class="footer background_color_N3">
-            <div class="footer-item">
-                <div class="footer-image">
-                    <img src="img/telegram.png" alt="nastya's tg">
-                </div>
-                <a href="https://t.me/nas_www_ay">Telegram</a>
-            </div>
+      <!-- Main Content -->
+      <main class="main-content background_color_N2">
+        <p>
+          Мне 20 лет, и вот уже полгода я работаю iOS-разработчиком. За это
+          время я освоила Swift, UIKit, и начала разбираться с SwiftUI. Каждый
+          день в работе приносит новые задачи: от написания кода до обсуждения
+          архитектуры приложений. Я часто работаю с Xcode — средой, которая
+          стала уже как родная. Иногда приходится решать сложные алгоритмические
+          задачи, что для меня особенно интересно, даже если порой решение не
+          сразу приходит.
+        </p>
+        <p>
+          Вне работы я обожаю котиков, комедии и походы в горы. Котики всегда
+          поднимают настроение, комедии помогают отвлечься, а горы — это место,
+          где я могу перезагрузиться и найти вдохновение.
+        </p>
 
-            <div class="footer-item">
-                <div class="footer-image">
-                    <img src="img/github.png" alt="nastya's github">
-                </div>
-                <a href="https://github.com/t-anastasiia">Github</a>
-            </div>
+        <!-- Контейнер для опроса -->
+        <div class="survey-container"></div>
+
+        <!-- Контейнер для отображения результатов -->
+        <div class="result-container"></div>
+
+        <div class="back-to-main">
+          <button onclick="window.location.href='index.html';">
+            Back to Main Page
+          </button>
         </div>
-    
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer background_color_N3">
+        <div class="footer-item">
+          <div class="footer-image">
+            <img src="src/assets/telegram.png" alt="nastya's tg" />
+          </div>
+          <a href="https://t.me/nas_www_ay">Telegram</a>
+        </div>
+        <div class="footer-item">
+          <div class="footer-image">
+            <img src="src/assets/github.png" alt="nastya's github" />
+          </div>
+          <a href="https://github.com/t-anastasiia">Github</a>
+        </div>
+      </footer>
     </div>
-    
-</body>
+
+    <script src="./src/js/n_survey.js"></script>
+  </body>
 </html>

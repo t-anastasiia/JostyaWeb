@@ -1,67 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <noscript>
-        <p>Your browser does not support JavaScript, or it is disabled. Some features on this page may not work as intended.</p>
+      <p>
+        Your browser does not support JavaScript, or it is disabled. Some
+        features on this page may not work as intended.
+      </p>
     </noscript>
-    
-    <link rel="icon" href="img/user.png" type="image/x-icon">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="./src/assets/user.png" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Joubran's page</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="./src/css/styles.css" />
+  </head>
+  <body class="j-page">
     <div class="container">
-
-        <!-- Header --> 
-        <div class="header-wrapper background_color_J1">
-            <div class="header">
-                Joubran, The Cat
-            </div>
-
-            <!-- Image to the Right of Main Content -->
-            <div class="main-content-image">
-                <img src="img/image_j.jpeg" alt="Jay">
-            </div>
+      <!-- Header -->
+      <header class="header-wrapper background_color_J1">
+        <h1 class="header">Joubran, The Cat</h1>
+        <div class="main-content-image">
+          <img src="src/assets/joubran.jpg" alt="Jay" />
         </div>
+      </header>
 
-        <!-- Main Content -->
-        <div class="main-content background_color_J2">
-            <p>The Best Cat Programmer: A Purrfect Bio</p>
+      <!-- Main Content -->
+      <main class="main-content background_color_J2">
+        <p>The Best Cat Programmer: A Purrfect Bio</p>
+        <p>
+          I’m not just a programmer—I’m the cat programmer. Combining curiosity,
+          agility, and elegance, my coding skills are as sharp as my claws. Let
+          me take you through some highlights from my purrfect portfolio:
+        </p>
+        <p>
+          ClawDB: A revolutionary NoSQL database with scratch-like querying.
+          Forget complex queries—just scratch your way to lightning-fast data
+          retrieval.
+        </p>
+        <p>
+          WhiskerAI: A machine learning model inspired by whiskers, offering
+          hair-raising precision and outpacing other AIs in meme comprehension.
+        </p>
 
-            <p>I’m not just a programmer—I’m the cat programmer. Combining curiosity, agility, and elegance, my coding skills are as sharp as my claws. Let me take you through some highlights from my purrfect portfolio:</p>
-                
-            <p>ClawDB: A revolutionary NoSQL database with scratch-like querying. Forget complex queries—just scratch your way to lightning-fast data retrieval.</p>
-                
-            <p>WhiskerAI: A machine learning model inspired by whiskers, offering hair-raising precision and outpacing other AIs in meme comprehension.</p>
+        <!-- Контейнер для опроса -->
+        <div class="survey-container"></div>
 
-             <!-- Back to Main Page Button -->
-            <div class="back-to-main">
-                <button onclick="window.location.href='index.html';">Back to Main Page</button>
-            </div>
+        <!-- Контейнер для отображения результатов -->
+        <div class="result-container"></div>
+
+        <div class="back-to-main">
+          <button onclick="window.location.href='index.html';">
+            Back to Main Page
+          </button>
         </div>
+      </main>
 
-    
-        <!-- Footer -->
-        <div class="footer background_color_J3">
-            <div class="footer-item">
-                <div class="footer-image">
-                    <img src="img/telegram.png" alt="jay's tg">
-                </div>
-                <a href="https://t.me/Joubran13">Telegram</a>
-            </div>
-
-            <div class="footer-item">
-                <div class="footer-image">
-                    <img src="img/github.png" alt="jay's github">
-                </div>
-                <a href="https://github.com/Joubran">Github</a>
-            </div>
+      <!-- Footer -->
+      <footer class="footer background_color_J3">
+        <div class="footer-item">
+          <div class="footer-image">
+            <img src="src/assets/telegram.png" alt="jay's tg" />
+          </div>
+          <a href="https://t.me/Joubran13">Telegram</a>
         </div>
-    
+        <div class="footer-item">
+          <div class="footer-image">
+            <img src="src/assets/github.png" alt="jay's github" />
+          </div>
+          <a href="https://github.com/Joubran">Github</a>
+        </div>
+      </footer>
     </div>
-    
-</body>
+
+    <script src="./src/js/j_survey.js"></script>
+  </body>
 </html>

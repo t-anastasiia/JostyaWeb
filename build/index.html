@@ -1,51 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="icon" href="img/home.png" type="image/x-icon">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="icon" href="./src/assets/home.png" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jostya</title>
-    <!-- Подключаем файл стилей -->
-    <link rel="stylesheet" href="css/styles.css">
-    
-    <!-- Сообщение для пользователей с отключенным JavaScript -->
+    <link rel="stylesheet" href="./src/css/styles.css" />
+
     <noscript>
-        <p>Your browser does not support JavaScript, or it is disabled. Some features on this page may not work as intended.</p>
+      <p>
+        Your browser does not support JavaScript, or it is disabled. Some
+        features on this page may not work as intended.
+      </p>
     </noscript>
-</head>
-<body>
-    <!-- Контейнер для основного контента страницы -->
+  </head>
+  <body>
     <div class="main-page-container">
-
-        <div class="base-layer">
-            <!-- Левая колонка с заголовком и изображением -->
-            <div class="column left-column">
-                <h2>Jourban</h2>
-                <a href="J_Page.html">
-                    <img src="img/joubran.jpg" alt="Jourban Cat">
-                </a>
-            </div>
-
-            <!-- Правая колонка с заголовком и изображением -->
-            <div class="column right-column">
-                <h2>Nastya</h2>
-                <a href="N_Page.html">
-                    <img src="img/nastya.jpg" alt="Nastya's photo">
-                </a>
-            </div>
+      <div class="base-layer">
+        <div class="column left-column">
+          <h2>Jourban</h2>
+          <a href="J_Page.html">
+            <img
+              src="src/assets/joubran.jpg"
+              alt="Jourban Cat"
+              class="animated-image"
+            />
+          </a>
         </div>
 
-        <!-- Центральная колонка с именем -->
-        <div class="column center-column top-layer">
-            <h2>Jostya</h2>
+        <div class="column right-column">
+          <h2>Nastya</h2>
+          <a href="N_Page.html">
+            <img
+              src="src/assets/nastya.jpg"
+              alt="Nastya's photo"
+              class="animated-image"
+            />
+          </a>
         </div>
+      </div>
 
+      <div class="column center-column top-layer">
+        <h2>Jostya</h2>
+      </div>
     </div>
 
-<!-- Footer (подвал страницы) -->
-<footer class="footer p">
-    <p><a href="https://www.dvfu.ru/"><img src="img/dvfu2.png" alt="Сайт ДВФУ" class="footer-logo"></a></p>
-    <p>&copy; 2024 Jostya Website. All rights reserved.</p>
-</footer>
-</body>
+    <footer class="footer p">
+      <p>
+        <a href="https://www.dvfu.ru/">
+          <img src="src/assets/dvfu2.png" alt="Сайт ДВФУ" class="footer-logo" />
+        </a>
+      </p>
+      <p>&copy; 2024 Jostya Website. All rights reserved.</p>
+    </footer>
+    <script>
+      const links = document.querySelectorAll("a");
+
+      links.forEach((link) => {
+        const image = link.querySelector(".animated-image");
+
+        link.addEventListener("mouseover", () => {
+          image.style.transform = "scale(1.1)";
+          image.style.transition = "transform 0.3s ease";
+        });
+
+        link.addEventListener("mouseout", () => {
+          image.style.transform = "scale(1)";
+        });
+      });
+    </script>
+  </body>
 </html>
