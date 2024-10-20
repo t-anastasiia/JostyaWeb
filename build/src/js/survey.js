@@ -186,22 +186,19 @@ window.onload = function () {
 };
 
 function getCatFactWithAjax(callback) {
-  const xhr = new XMLHttpRequest();
-  xhr.open("GET", "https://catfact.ninja/fact", true); 
-
-  xhr.onreadystatechange = function () {
-    if (xhr.readyState === 4 && xhr.status === 200) {
-      const response = JSON.parse(xhr.responseText); 
+  $.ajax({
+    url: 'https://catfact.ninja/fact', 
+    method: 'GET', 
+    dataType: 'json', 
+    success: function (response) {
       callback(response.fact); 
+    },
+
+    error: function () {
+      console.error("Ошибка при запросе факта о котах");
+      callback("Не удалось получить факт о котах."); 
     }
-  };
-
-  xhr.onerror = function () {
-    console.error("Ошибка при запросе факта о котах");
-    callback("Не удалось получить факт о котах.");
-  };
-
-  xhr.send();
+  });
 }
 
 function showModal(message) {
@@ -217,7 +214,6 @@ function showModal(message) {
   }
 
   closeButton.onclick = closeModal;
-  closeSpan.onclick = closeModal;
 
   window.onclick = function (event) {
     if (event.target == modal) {
