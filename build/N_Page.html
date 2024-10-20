@@ -11,13 +11,23 @@
     <link rel="icon" href="./src/assets/user.png" type="image/x-icon" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nastya's page</title>
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
     <link rel="stylesheet" href="./src/css/styles.css" />
+
+    <title>Nastya's page</title>
   </head>
   <body class="n-page">
     <div class="container">
       <!-- Header -->
       <header class="header-wrapper background_color_N1">
+        <div class="back-to-main">
+          <button onclick="window.location.href='index.html';">
+            <i class="uil uil-arrow-left"></i>
+          </button>
+        </div>
         <h1 class="header">Nastya</h1>
         <div class="main-content-image">
           <img src="src/assets/nastya.jpg" alt="Nastya" />
@@ -47,11 +57,6 @@
         <!-- Контейнер для отображения результатов -->
         <div class="result-container"></div>
 
-        <div class="back-to-main">
-          <button onclick="window.location.href='index.html';">
-            Back to Main Page
-          </button>
-        </div>
       </main>
 
       <!-- Footer -->
@@ -71,6 +76,12 @@
       </footer>
     </div>
 
-    <script src="./src/js/n_survey.js"></script>
+    <script src="./src/js/survey.js"></script>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <p id="modal-text"></p>
+        <button id="modal-close-button">ОК</button>
+      </div>
+    </div>
   </body>
 </html>
