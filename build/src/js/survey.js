@@ -1,48 +1,47 @@
-
 const nPageQuestions = [
   {
     id: 1,
-    question: "Что вызывает у вас больше всего эмоций?",
+    question: "What causes the most emotions for you?",
     options: [
-      { text: "Кошки", points: 3 },
-      { text: "Собаки", points: 2 },
-      { text: "Программы", points: 1 },
+      { text: "Cats", points: 3 },
+      { text: "Dogs", points: 2 },
+      { text: "Programs", points: 1 },
     ],
   },
   {
     id: 2,
-    question: "Чем вы занимаетесь в свободное время?",
+    question: "What do you do in your free time?",
     options: [
-      { text: "Смотрю видео про котов", points: 3 },
-      { text: "Читаю книги", points: 2 },
-      { text: "Кодирую", points: 1 },
+      { text: "Watch cat videos", points: 3 },
+      { text: "Read books", points: 2 },
+      { text: "Code", points: 1 },
     ],
   },
   {
     id: 3,
-    question: "Что вас больше вдохновляет?",
+    question: "What inspires you more?",
     options: [
-      { text: "Фотографии котов", points: 3 },
-      { text: "Природа", points: 2 },
-      { text: "Новый фреймворк", points: 1 },
+      { text: "Cat photos", points: 3 },
+      { text: "Nature", points: 2 },
+      { text: "A new framework", points: 1 },
     ],
   },
   {
     id: 4,
-    question: "Какую кружку вы выбрали бы?",
+    question: "Which mug would you choose?",
     options: [
-      { text: "С котиком", points: 3 },
-      { text: "С мемом", points: 2 },
-      { text: "С логотипом любимого языка программирования", points: 1 },
+      { text: "With a cat", points: 3 },
+      { text: "With a meme", points: 2 },
+      { text: "With a logo of your favorite programming language", points: 1 },
     ],
   },
   {
     id: 5,
-    question: "Как бы вы провели вечер?",
+    question: "How would you spend your evening?",
     options: [
-      { text: "Общение с котом", points: 3 },
-      { text: "Прогулка на свежем воздухе", points: 2 },
-      { text: "Решение задач на программирование", points: 1 },
+      { text: "Chatting with a cat", points: 3 },
+      { text: "Walking in the fresh air", points: 2 },
+      { text: "Solving programming tasks", points: 1 },
     ],
   },
 ];
@@ -50,47 +49,47 @@ const nPageQuestions = [
 const jPageQuestions = [
   {
     id: 1,
-    question: "Как вы проводите вечер после работы?",
+    question: "How do you spend your evening after work?",
     options: [
-      { text: "Играю в видеоигры", points: 3 },
-      { text: "Гуляю с котом", points: 2 },
-      { text: "Читаю книгу", points: 1 },
+      { text: "Play video games", points: 3 },
+      { text: "Walk with a cat", points: 2 },
+      { text: "Read a book", points: 1 },
     ],
   },
   {
     id: 2,
-    question: "Что вы больше ждете?",
+    question: "What are you looking forward to more?",
     options: [
-      { text: "Релиз новой игры", points: 3 },
-      { text: "Новый вид корма для кота", points: 2 },
-      { text: "Новую серию любимого шоу", points: 1 },
+      { text: "New game release", points: 3 },
+      { text: "New type of cat food", points: 2 },
+      { text: "New episode of your favorite show", points: 1 },
     ],
   },
   {
     id: 3,
-    question: "Что вас больше радует?",
+    question: "What makes you happier?",
     options: [
-      { text: "Прохождение сложного уровня в игре", points: 3 },
-      { text: "Кот мурлычет рядом", points: 2 },
-      { text: "Успешный день на работе", points: 1 },
+      { text: "Completing a difficult game level", points: 3 },
+      { text: "A cat purring nearby", points: 2 },
+      { text: "A successful day at work", points: 1 },
     ],
   },
   {
     id: 4,
-    question: "Какую футболку вы бы выбрали?",
+    question: "Which t-shirt would you choose?",
     options: [
-      { text: "С героем видеоигры", points: 3 },
-      { text: "С котиком", points: 2 },
-      { text: "С мемом", points: 1 },
+      { text: "With a video game character", points: 3 },
+      { text: "With a cat", points: 2 },
+      { text: "With a meme", points: 1 },
     ],
   },
   {
     id: 5,
-    question: "Какой идеальный выходной?",
+    question: "What is your ideal day off?",
     options: [
-      { text: "Целый день играю", points: 3 },
-      { text: "Целый день провожу с котом", points: 2 },
-      { text: "Целый день с друзьями", points: 1 },
+      { text: "Playing all day", points: 3 },
+      { text: "Spending the day with a cat", points: 2 },
+      { text: "Hanging out with friends all day", points: 1 },
     ],
   },
 ];
@@ -111,12 +110,12 @@ function displaySurvey(questions) {
                     )
                     .join("")}
                 </div>
-                <p>Вопрос ${index + 1} из ${questions.length}</p>`;
+                <p>Question ${index + 1} of ${questions.length}</p>`;
 
     html +=
       index < questions.length - 1
-        ? '<button id="next-question">Следующий вопрос</button>'
-        : '<button id="submit-survey">Завершить опрос</button>';
+        ? '<button id="next-question">Next question</button>'
+        : '<button id="submit-survey">Complete survey</button>';
 
     surveyContainer.innerHTML = html;
 
@@ -137,7 +136,7 @@ function displaySurvey(questions) {
             displayResults(totalPoints, questions === nPageQuestions);
           }
         } else {
-          showModal("Пожалуйста, выберите один из вариантов ответа!");
+          showModal("Please select an option!");
         }
       });
   }
@@ -151,29 +150,29 @@ function displayResults(points, isNPage) {
 
   if (isNPage) {
     if (points <= 8) {
-      resultText = "Вы больше любите котов!";
+      resultText = "You love cats more!";
     } else if (points > 8 && points <= 12) {
-      resultText = "Вам нравятся и программирование, и коты!";
+      resultText = "You like both programming and cats!";
     } else {
-      resultText = "Вы больше любите программирование!";
+      resultText = "You love programming more!";
     }
   } else {
     if (points <= 8) {
-      resultText = "Вы больше любите котов!";
+      resultText = "You love cats more!";
     } else if (points > 8 && points <= 12) {
-      resultText = "Вам нравятся и видеоигры, и коты!";
+      resultText = "You like both video games and cats!";
     } else {
-      resultText = "Вы больше любите видеоигры!";
+      resultText = "You love video games more!";
     }
   }
 
-  resultContainer.innerHTML = `<h2>Результат опроса</h2><p>${resultText}</p>`;
+  resultContainer.innerHTML = `<h2>Survey Result</h2><p>${resultText}</p>`;
   resultContainer.style.display = "block";
 
-    // Получаем и отображаем факт о котах через AJAX
-    getCatFactWithAjax(function(fact) {
-      showModal(`Факт о котах: ${fact}`);
-    });
+  // Get and display a cat fact via AJAX
+  getCatFactWithAjax(function (fact) {
+    showModal(`Cat fact: ${fact}`);
+  });
 }
 
 window.onload = function () {
@@ -187,17 +186,17 @@ window.onload = function () {
 
 function getCatFactWithAjax(callback) {
   $.ajax({
-    url: 'https://catfact.ninja/fact', 
-    method: 'GET', 
-    dataType: 'json', 
+    url: "https://catfact.ninja/fact",
+    method: "GET",
+    dataType: "json",
     success: function (response) {
-      callback(response.fact); 
+      callback(response.fact);
     },
 
     error: function () {
-      console.error("Ошибка при запросе факта о котах");
-      callback("Не удалось получить факт о котах."); 
-    }
+      console.error("Error fetching cat fact");
+      callback("Failed to fetch cat fact.");
+    },
   });
 }
 
@@ -207,10 +206,10 @@ function showModal(message) {
   const closeButton = document.getElementById("modal-close-button");
 
   modalText.innerText = message;
-  modal.style.display = "flex"; 
+  modal.style.display = "flex";
 
   function closeModal() {
-    modal.style.display = "none"; 
+    modal.style.display = "none";
   }
 
   closeButton.onclick = closeModal;
